@@ -7,9 +7,9 @@ var [xpos, ypos, xspeed, yspeed] = [225, 225, 0, 0];
 
 function draw() {
 	fill(0, 0, 0);
-	circle(mouseX, mouseY, 5);
-	if(xpos >= 0 && xpos + 50 <= 500) xpos += xspeed;
-	if(ypos >= 0 && ypos + 50 <= 500) ypos += yspeed;
+  if(mouseIsPressed){
+	  circle(mouseX, mouseY, 5);
+  }
 }
 
 function keyPressed() {
