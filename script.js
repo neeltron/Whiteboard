@@ -8,7 +8,7 @@ var [xpos, ypos, xspeed, yspeed] = [225, 225, 0, 0];
 function draw() {
 	fill(0, 0, 0);
   if(mouseIsPressed){
-	  circle(mouseX, mouseY, 5);
+	  line(mouseX, mouseY, pmouseX, pmouseY);
   }
 }
 
